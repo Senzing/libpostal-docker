@@ -13,8 +13,8 @@ version = "0.1.0"
 
 [tool.poetry.urls]
 "Blog Post" = "https://"
-"Code Repository" = "https://github.com/rjurney/libpostal-reborn"
-"Bug Tracker" = "https://github.com/rjurney/libpostal-reborn/issues"
+"Code Repository" = "https://github.com/senzing/libpostal-reborn"
+"Bug Tracker" = "https://github.com/senzing/libpostal-reborn/issues"
 
 [tool.poetry.dependencies]
 python = "^3.11"
