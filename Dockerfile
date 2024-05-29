@@ -15,17 +15,16 @@ RUN git clone https://github.com/openvenues/libpostal.git && \
   make install && \
   ldconfig
 
-USER 1001
-
-# Add libpostal executables to the PATH
-ENV PATH "/libpostal/src:/libpostal/src/.libs:$PATH"
-
 ENV POETRY_VIRTUALENVS_CREATE=false \
   POETRY_VERSION=1.8.3
 
 # Install poetry so we can install our package requirements
 WORKDIR /root
 RUN curl -sSL https://install.python-poetry.org | python3 -
+
+USER 1001
+# Add libpostal executables to the PATH
+ENV PATH "/libpostal/src:/libpostal/src/.libs:$PATH"
 ENV PATH "/root/.local/bin:$PATH"
 
 # Copy the poetry.lock and pyproject.toml files
