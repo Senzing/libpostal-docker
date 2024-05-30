@@ -13,8 +13,8 @@ The only prerequisite for this project is Docker. If you don't have it installed
 This mode lets you type addresses and see how Libpostal parses them. To run it, use the following commands:
 
 ```bash
-docker pull rjurney/libpostal-docker:latest
-docker run -it rjurney/libpostal-docker:latest address_parser
+docker pull senzing/libpostal-docker:latest
+docker run -it senzing/libpostal-docker:latest address_parser
 ```
 
 ## Trying the PyPostal Python Library
@@ -22,8 +22,8 @@ docker run -it rjurney/libpostal-docker:latest address_parser
 To run the Libpostal Docker container, you can use the following commands:
 
 ```bash
-docker pull rjurney/libpostal-docker:latest
-docker run -it rjurney/libpostal-docker:latest bash
+docker pull senzing/libpostal-docker:latest
+docker run -it senzing/libpostal-docker:latest bash
 ```
 
 Now run:

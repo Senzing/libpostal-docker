@@ -1,9 +1,9 @@
 version: "3.8"
 
 services:
-  
+
   jupyter:
-    image: rjurney/libpostal-docker:latest
+    image: senzing/libpostal-docker:latest
     build:
       context: .
       dockerfile: Dockerfile
@@ -11,7 +11,7 @@ services:
     restart: always
     command: tail -f /dev/null
     stdin_open: true
-    tty: true  
+    tty: true
     deploy:
       resources:
         limits:
