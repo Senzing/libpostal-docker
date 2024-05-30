@@ -21,6 +21,7 @@ ENV POETRY_VIRTUALENVS_CREATE=false \
 # Install poetry so we can install our package requirements
 WORKDIR /root
 RUN curl -sSL https://install.python-poetry.org | python3 -
+ENV PATH "/root/.local/bin:$PATH"
 
 # Copy the poetry.lock and pyproject.toml files
 COPY pyproject.toml poetry.lock /root/
@@ -33,7 +34,6 @@ RUN poetry config virtualenvs.create false && \
 USER 1001
 # Add libpostal executables to the PATH
 ENV PATH "/libpostal/src:/libpostal/src/.libs:$PATH"
-ENV PATH "/root/.local/bin:$PATH"
 
 # Go into a holding pattern for the user to run address_parser or bash to try the Python library
 CMD tail -f /dev/null
