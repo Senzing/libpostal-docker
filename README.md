@@ -1,12 +1,12 @@
 # Libpostal Docker
 
-This project provides a simple two-step process to try the [Libpostal](https://github.com/openvenues/libpostal) address parsing library in its interactive mode.
+This project provides a simple two-step process to try the [Libpostal] address parsing library in its interactive mode.
 
-It also includes the Python [pypostal](https://github.com/openvenues/pypostal) library for you to try.
+It also includes the Python [pypostal] library for you to try.
 
 ## Prerequisites
 
-The only prerequisite for this project is Docker. If you don't have it installed, you can download it from [here](https://www.docker.com/products/docker-desktop).
+The only prerequisite for this project is Docker. If you don't have it installed, you can download it from [here].
 
 ## TLDR Interactive Mode
 
@@ -32,7 +32,7 @@ Now run:
 ipython
 ```
 
-And import and use the [pypostal](https://github.com/openvenues/pypostal) library:
+And import and use the [pypostal] library:
 
 ```python
 from postal.parser import parse_address
@@ -57,4 +57,9 @@ Out[2]:
 
 ## Author
 
-This project was created out of love for [Libpostal](https://github.com/openvenues/libpostal) by [Russell Jurney](https://www.linkedin.com/in/russelljurney/).
+This project was created out of love for [Libpostal] by [Russell Jurney].
+
+[Libpostal]: https://github.com/openvenues/libpostal
+[pypostal]: https://github.com/openvenues/pypostal
+[here]: https://www.docker.com/products/docker-desktop
+[Russell Jurney]: https://www.linkedin.com/in/russelljurney/
